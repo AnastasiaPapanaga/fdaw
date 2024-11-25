@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie de Imagini</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Galerie de Imagini</h1>
+  </header>
+
+  <main>
+    <!-- Form pentru adăugarea imaginilor -->
+    <section id="add-image">
+      <h2>Adaugă o imagine</h2>
+      <form id="image-form">
+        <label for="title">Titlu:</label>
+        <input type="text" id="title" placeholder="Titlul imaginii" required>
+        
+        <label for="url">URL:</label>
+        <input type="url" id="url" placeholder="Link către imagine" required>
+        
+        <label for="description">Descriere:</label>
+        <textarea id="description" placeholder="Descrierea imaginii (opțional)"></textarea>
+        
+        <button type="submit">Adaugă imaginea</button>
+      </form>
+    </section>
+
+    <!-- Lista imaginilor -->
+    <section id="image-list">
+      <h2>Lista imaginilor</h2>
+      <div id="cards-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
